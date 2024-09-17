@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="input.css">
+    <title>Grocery Store</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-[url('https://t3.ftcdn.net/jpg/03/35/74/56/360_F_335745675_MaxYxSsadrviZdThITuHB2oCohYOiwEu.jpg')] bg-no-repeat bg-cover bg-center h-screen w-full">
+    <div class="container">
+        <nav class="flex h-14 bg-gray-50 w-full fixed top-0 left-0 z-10">
+            <a  href="home" class="text-4xl text-green-500 font-bold ml-11 pt-1 transform transition-transform duration-300 hover:scale-110 hover:cursor-pointer active:text-green-800">GreenBasket</a>
+            <ul class="flex items-center space-x-14 font-bold ml-[450px] text-2xl font-mono">
+                <li class="transform transition-transform duration-300 hover:scale-110"><a href="#home">Home</a></li>
+                <li class="transform transition-transform duration-300 hover:scale-110"><a href="#Menu">Menu</a></li>
+                <li class="transform transition-transform duration-300 hover:scale-110"><a href="#Aboutus">About Us</a></li>
+                <li class="transform transition-transform duration-300 hover:scale-110"><a href="#Contact">Contact</a></li>
+                <img class="h-10 ml-4 pt-1 cursor-pointer transform transition-transform duration-300 hover:scale-125" src="./images/Cart-logo.svg" alt="Cart">
+                <li class="border px-2 bg-black cursor-pointer text-white rounded-lg transform transition-transform duration-300 hover:scale-100 hover:border-2 hover:border-black hover:bg-white hover:text-black">Sign Up</a>
+            </ul>
+        </nav>
+
+    <section id="home">
+        <div class="pt-44">
+            <span class="block font-bold text-4xl ml-20">Fresh Groceries Delivered to Your Doorstep!!</span>
+        </div>
+        <div>
+            <span class="font-semibold ml-32 m-3">Shop fresh fruits, vegetables, pantry essentials, and more with fast and reliable delivery.</span>
+        </div>
+        <div>
+            <button class="mt-16 ml-44 border-2 px-4 py-2 rounded-lg border-green-600 text-xl font-extrabold transform transition-transform duration-300 hover:scale-110 hover:underline hover:cursor-pointer active:no-underline">Shop Now</button>
+            <button class="mt-16 ml-44 border-2 px-4 py-2 rounded-lg border-green-600 text-xl font-extrabold transform transition-transform duration-300 hover:scale-110 hover:underline hover:cursor-pointer active:no-underline">Offers</button>
+        </div>
+        <div class="mt-14 ml-56 mb-24">
+            <img src="./images/rating.png" alt="Rating">
+        </div>
+        <div>
+            <span class="ml-[290px] font-bold text-lg">Download Our App For</span>
+        </div>
+        <div class="flex flex-auto">
+            <img class="h-[3rem] ml-[19rem] mt-10 transform transition-transform duration-300 hover:scale-125 hover:cursor-pointer" src="./images/playstore-logo.png" alt="Play Store">
+            <img class="h-[3rem] ml-[4.5rem] mt-10 transform transition-transform duration-300 hover:scale-125 hover:cursor-pointer" src="./images/apple-logo.png" alt="Apple Store">
+        </div>
+    </div>
+</section>
+
+
+<!-- section for products -->
+ <section >
+    <div id="Menu" class="pt-20 text-center text-5xl text-green-400 font-serif font-medium mb-7">Items  Delivered!!</div>
+    <section >
+    <!-- Apple -->
+    <span class="font-bold text-3xl ml-40">Fruits!!</span>
+    <div class="flex">
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl ml-28 mt-5 shadow-lg shadow-slate-700 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/apple.png" alt="">
+        <span class="ml-28 font-mono font-extrabold text-xl">Apples</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  >
+            <option value="Quantity"> Quantity</option>
+            <option value="500 g">500 g</option>
+            <option value="1 Kg">1 Kg</option>
+            <option value="2 Kg">2 Kg</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span  class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[25px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Orange -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/orange.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Oranges</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="500 g">500 g</option>
+            <option value="1 Kg">1 Kg</option>
+            <option value="2 Kg">2 Kg</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banana -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/banana.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Bananas</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="500 g">500 g</option>
+            <option value="1 Kg">1 Kg</option>
+            <option value="2 Kg">2 Kg</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Strawberry -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/strawberry.png" alt="">
+        <span class="ml-24 font-mono font-extrabold text-xl">Strawberry</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="500 g">500 g</option>
+            <option value="1 Kg">1 Kg</option>
+            <option value="2 Kg">2 Kg</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- vegetables -->
+
+    <!-- tamatoes -->
+<section class="mt-16">
+    <span class="font-bold text-3xl ml-40">Vegetables!!</span>
+    <div class="flex">
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl ml-28 mt-5 shadow-lg shadow-slate-700 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/tamatoes.png" alt="">
+        <span class="ml-[6rem] font-mono font-extrabold text-xl">Tamatoes</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  >
+            <option value="Quantity"> Quantity</option>
+            <option value="500 g">500 g</option>
+            <option value="1 Kg">1 Kg</option>
+            <option value="2 Kg">2 Kg</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span  class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[25px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ladyfinger -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/ladyfinder.png" alt="">
+        <span class="ml-[5rem] font-mono font-extrabold text-xl">Ladyfinger</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="500 g">500 g</option>
+            <option value="1 Kg">1 Kg</option>
+            <option value="2 Kg">2 Kg</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- patato -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/patato.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Patato</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="500 g">500 g</option>
+            <option value="1 Kg">1 Kg</option>
+            <option value="2 Kg">2 Kg</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- carrot -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/carrot.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Carrot</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="500 g">500 g</option>
+            <option value="1 Kg">1 Kg</option>
+            <option value="2 Kg">2 Kg</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- dairy products -->
+
+ <!-- milk -->
+<section class="mt-16">
+    <span class="font-bold text-3xl ml-36">Dairy Products!!</span>
+    <div class="flex">
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl ml-28 mt-5 shadow-lg shadow-slate-700 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/milk.png" alt="">
+        <span class="ml-28 font-mono font-extrabold text-xl">Milk</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  >
+            <option value="Quantity"> Quantity</option>
+            <option value="500 mili">500 mili</option>
+            <option value="1 L">1 L</option>
+            <option value="2 L">2 L</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span  class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[25px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- cheese -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/cheese.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Cheese</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- butter -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/butter.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Butter</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- yoghurt -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/yoghurt.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Yoghurt</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- bakery products -->
+
+ <!-- bread -->
+<section class="mt-16">
+    <span class="font-bold text-3xl ml-32">Bakery Products!!</span>
+    <div class="flex">
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl ml-28 mt-5 shadow-lg shadow-slate-700 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/bread.png" alt="">
+        <span class="ml-28 font-mono font-extrabold text-xl">Bread</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  >
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span  class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[25px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- pastries -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/Pastries.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Pastries</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- bagels -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/Bagels.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Bagels</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- muffins -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/muffins.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Muffins</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Snacks and Beverages -->
+
+<section class="mt-16">
+    <span class="font-bold text-3xl ml-32"> Snacks and Beverages!!</span>
+    <div class="flex">
+        <!-- chips -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl ml-28 mt-5 shadow-lg shadow-slate-700 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/chips.png" alt="">
+        <span class="ml-28 font-mono font-extrabold text-xl">Chips</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  >
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span  class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[25px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- cookies -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/cookies.webp" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Cookies</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- sprite -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/sprite.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Sprite</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- juice -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/juice.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Juice</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Meat and Seafood -->
+ <section class="mt-16">
+    <span class="font-bold text-3xl ml-32"> Meat and Seafood!!</span>
+    <div class="flex">
+        <!-- chicken  -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl ml-28 mt-5 shadow-lg shadow-slate-700 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/chicken.png" alt="">
+        <span class="ml-28 font-mono font-extrabold text-xl">Chicken</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  >
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span  class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[25px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- sausages  -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/sausages.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Sausages</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- shrimp  -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/shrimp.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Shrimp</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- fish fillets -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/fish fillets.png" alt="">
+        <span class="ml-[5rem] font-mono font-extrabold text-xl">Fish Fillets</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Condiments and Spices -->
+ <section class="mt-16">
+    <span class="font-bold text-3xl ml-32">Condiments and Spices!!</span>
+    <div class="flex">
+        <!-- salt  -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl ml-28 mt-5 shadow-lg shadow-slate-700 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/salt.png" alt="">
+        <span class="ml-28 font-mono font-extrabold text-xl">Salt</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  >
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span  class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[25px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- oil  -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/oil.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Oil</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- blackpepper  -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/blackpepper.png" alt="">
+        <span class="ml-[5rem] font-mono font-extrabold text-xl">Blackpepper</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ketchup  -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/ketchup.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Ketchup</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Household Items -->
+ <section class="mt-16">
+    <span class="font-bold text-3xl ml-32">Household Items!!</span>
+    <div class="flex">
+        <!-- tide  -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl ml-28 mt-5 shadow-lg shadow-slate-700 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/tide.png" alt="">
+        <span class="ml-28 font-mono font-extrabold text-xl">Tide</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  >
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span  class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[25px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- sponges  -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/sponges.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Sponges</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- papertowels  -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/papertowels.png" alt="">
+        <span class="ml-[5rem] font-mono font-extrabold text-xl">Paper Towels</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- gloves  -->
+    <div class="container h-[380px] w-[285px] border-2 border-gray-900 rounded-2xl  mt-5 shadow-lg shadow-slate-700 ml-12 transform transition-transform duration-300 hover:scale-95">
+        <img class="h-48 m-auto my-5 w-60 rounded-2xl shadow-lg shadow-slate-400 border-2 border-gray-600 blur-0" src="./images/gloves.png" alt="">
+        <span class="ml-[6.5rem] font-mono font-extrabold text-xl">Gloves</span>
+
+        <div>
+        <select class="quantity border-2 rounded-md ml-6 mt-2 border-black"  name="quantity">
+            <option value="Quantity"> Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+            <span class="text-lg font-medium ml-9">Price:</span>
+            <span class="price text-xl font-bold">₹ 0.00</span>
+            <div class="flex">
+                <img class="h-8 mt-7 cursor-pointer ml-8  " src="./images/bookmark.png" alt="">
+                <button class="border-2 border-orange-500 text-black font-serif font-semibold rounded-lg h-8 mt-7 ml-[20px] w-44 hover:underline active:no-underline transform transition-transform duration-300 hover:scale-110">ADD</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About-us section  -->
+ <section id="Aboutus">
+    <div class="pt-20 text-center text-5xl text-green-400 font-serif font-medium">About Us!!!</div>
+    <p class=" font-bold text-3xl ml-28 mt-20">-  About GreenBasket!!</p>
+    <p class="font-medium mt-4 ml-32">
+        Welcome to GreenBasket, your one-stop online destination for fresh, organic, and sustainably sourced groceries. <br> 
+        GreenBasket, we believe in making healthy eating easy and accessible by bringing the freshest produce and daily essentials straight to your 
+    </p>
+    <p class="font-medium mt-4 ml-32">
+        We pride ourselves on delivering top-quality products, handpicked from trusted farmers and suppliers.<br>
+        Whether you're looking for seasonal fruits, farm-fresh vegetables, or pantry staples, GreenBasket ensures that every item is responsibly sourced and delivered with care.
+    </p>
+    <p class=" font-bold text-3xl ml-28 mt-14">- Why Choose Us?</p>
+    <ul class="list-disc list-inside text-lg mt-4 ml-36 space-y-5">
+        <li><b>Freshness Guaranteed:</b> We offer only the freshest produce, handpicked daily for your satisfaction.</li>
+        <li><b>Eco-friendly Choices:</b> Our packaging is sustainable, and we actively support local farmers and organic farming practices.</li>
+        <li><b>Convenience:</b> Shop from the comfort of your home, with fast delivery and flexible payment options.</li>
+        <li><b>Affordable Prices:</b> Quality products shouldn’t break the bank. We offer competitive prices on all your daily essentials.</li>
+    </ul>
+
+    <p class=" font-bold text-3xl ml-28 mt-14">- Our Mission</p>
+    <p class="font-medium mt-4 ml-32">At GreenBasket, our mission is to revolutionize the way people shop for groceries by delivering fresh, high-quality, and sustainably sourced products right to their doorstep.<br> We are committed to:</p>
+    <ul class="list-disc list-inside text-lg mt-4 ml-36 space-y-5">
+        <li><b>Empowering Healthy Choices:</b>  By providing access to fresh and organic groceries, we aim to promote healthier eating habits and well-being for families.</li>
+        <li><b>Supporting Local Farmers:</b>We build strong relationships with local farmers, ensuring they receive fair compensation while offering our customers the best products.
+        </li>
+        <li><b>Sustainability First: </b> Our focus is on reducing our carbon footprint through eco-friendly packaging and supporting sustainable farming practices.
+        </li>
+        <li><b>Convenience and Quality: </b> We strive to make grocery shopping hassle-free without compromising on quality, so you can focus on what matters most.
+        </li>
+    </ul>
+</section>
+
+<!-- Contact section  -->
+ <section id="Contact">
+    <div class="pt-20 text-center text-5xl  font-serif font-medium">Contact Us</div>
+<div class="flex">
+<img class="h-20 mt-20 ml-[420px]" src="./images/fevicon.png">
+<p class="text-8xl text-green-500 font-bold  mt-[60px] ml-4">GreenBasket</p>
+</div>
+
+   <p class="mt-20 text-center text-3xl"> GreenBasket HQ</p>
+    <p class=" font-medium mt-7 text-center text-xl ">1234 Market Street,
+        Suite 567,
+        Kharadi, India
+    </p>
+
+    <div class="flex">
+        <img class="h-6 ml-[600px] mt-10" src="./images/email.png">
+        <p class="mt-9 ml-2"><b>Email:</b><span class="ml-1 text-xl font-serif">contact@greenbasket.com</span></p>
+    </div>
+
+    <p class="text-xl font-serif font-semibold mt-12 text-center">Come More Close To Us By Following At:</p>
+    <div class="flex mt-5 space-x-7 ">
+        <img class="h-[2.9rem] ml-[630px] transform transition-transform duration-300 hover:scale-110 cursor-pointer " src="./images/instagram.png">
+        <img class="h-10 mt-1 transform transition-transform duration-300 hover:scale-110 cursor-pointer" src="./images/facebook.png">
+        <img class="h-10 mt-1 transform transition-transform duration-300 hover:scale-110 cursor-pointer" src="./images/twitter.png">
+    </div>
+</section>
+
+</section>
+
+
+<script>
+    window.onload= function(){
+        window.scrollTo(0,0);
+    }
+
+
+    const prices = {
+        "500 g": 30,
+        "1 Kg": 60,
+        "2 Kg": 120,
+    };
+
+    const quantitySelectors = document.querySelectorAll('.quantity');
+
+quantitySelectors.forEach((selector) => {
+    selector.addEventListener('change', function() {
+        const quantity = this.value;
+        const priceElement = this.parentElement.querySelector('.price');
+        const price = prices[quantity] || 0; 
+        priceElement.textContent = `₹${price.toFixed(2)}`;
+    });
+});
+</script>
+</body>
+</html>
